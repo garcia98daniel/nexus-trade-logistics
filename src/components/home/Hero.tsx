@@ -64,27 +64,22 @@ function HeroVisual() {
   ];
 
   return (
-    <div className="relative mx-auto aspect-[4/5] w-full max-w-md sm:aspect-square lg:max-w-none">
-      <div className="absolute inset-0 overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-navy via-navy-light to-steel shadow-2xl shadow-navy/30">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle,#d9d9d9_1px,transparent_1px)] [background-size:22px_22px]"
+    <div className="relative mx-auto aspect-[4/5] w-full max-w-md lg:max-w-none">
+      <div className="absolute inset-0 overflow-hidden rounded-[2.5rem] bg-navy shadow-2xl shadow-navy/30">
+        <Image
+          src="/images/hero-port.jpg"
+          alt={t.images.heroPort}
+          fill
+          priority
+          sizes="(min-width: 1024px) 50vw, (min-width: 448px) 448px, 100vw"
+          className="object-cover"
         />
-        <div aria-hidden className="absolute -right-24 -top-24 h-72 w-72 rounded-full border border-gold/30" />
-        <div aria-hidden className="absolute -bottom-32 -left-20 h-80 w-80 rounded-full border border-white/10" />
+        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/10 to-transparent" />
+        <div aria-hidden className="absolute -right-24 -top-24 h-72 w-72 rounded-full border border-gold/40" />
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="animate-float rounded-full bg-white p-6 shadow-2xl ring-8 ring-white/10 sm:p-8 overflow-hidden">
-          <Image
-            src="/images/logo-nexus.png"
-            alt="NEXUS TRADE & LOGISTICS"
-            width={260}
-            height={260}
-            priority
-            className="h-50 w-50 object-contain sm:h-56 sm:w-56"
-          />
-        </div>
+      <div className="animate-float absolute -right-3 -top-5 rounded-full bg-white p-2 shadow-xl ring-4 ring-white/60 sm:-right-5">
+        <Image src="/images/logo-nexus.png" alt="" width={96} height={96} className="h-20 w-20 object-contain" />
       </div>
 
       {modes.map(({ icon: Icon, label, position }) => (

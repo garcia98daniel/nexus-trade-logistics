@@ -16,7 +16,12 @@ export default function ConsultingContent() {
 
   return (
     <>
-      <PageHeader eyebrow={page.eyebrow} title={page.title} text={page.intro}>
+      <PageHeader
+        eyebrow={page.eyebrow}
+        title={page.title}
+        text={page.intro}
+        image={{ src: "/images/consulting.jpg", alt: t.images.consulting }}
+      >
         <button type="button" onClick={openContact} className={buttonStyles.primary}>
           {page.cta}
         </button>

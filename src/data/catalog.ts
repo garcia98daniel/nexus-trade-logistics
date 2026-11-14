@@ -12,6 +12,7 @@ export const catalog: Category[] = [
       "Fruits, vegetables, tubers, roots and agricultural products.",
     ),
     icon: "sprout",
+    image: "/images/agropecuarios.jpg",
     subcategories: [
       {
         id: "frutas-frescas",
@@ -129,6 +130,7 @@ export const catalog: Category[] = [
       "Green and roasted coffee; cocoa beans, butter, paste and derivatives.",
     ),
     icon: "coffee",
+    image: "/images/cafe-cacao.jpg",
     subcategories: [],
   },
   {

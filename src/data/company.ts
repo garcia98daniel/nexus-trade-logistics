@@ -26,13 +26,13 @@ export const history: Paragraphs = {
   es: [
     "NEXUS TRADE & LOGISTICS nace de una pasión que se fue construyendo a lo largo de los años: el interés por la logística, el comercio internacional y el fascinante mundo que conecta países, empresas y mercados.",
     "Lo que comenzó como un camino de aprendizaje y experiencia en el sector logístico, marítimo, portuario y multimodal, se convirtió en una visión respaldada por la formación académica, el conocimiento de los procesos del comercio y la convicción de que siempre es posible ir más allá.",
-    "Después de años de conocer, aprender y comprender la dinámica de esta industria, surgió la decisión de transformar esa experiencia y conocimiento en un proyecto empresarial propio, con una visión global y el propósito de conectar capacidades productivas con oportunidades comerciales alrededor del mundo.",
+    "Con esa visión como punto de partida, surgió la decisión de transformar el conocimiento y la experiencia en un proyecto empresarial propio, respaldado por personas que creyeron en esta iniciativa y decidieron aportar sus capacidades, relaciones, oportunidades comerciales y visión estratégica. Una unión en la que el conocimiento especializado se complementa con la confianza, el respaldo mutuo y la construcción conjunta de nuevas oportunidades.",
     "Así nace Nexus: de la pasión convertida en propósito, del conocimiento transformado en iniciativa y de la convicción de que los grandes proyectos comienzan cuando existe la determinación de hacerlos realidad.",
   ],
   en: [
     "NEXUS TRADE & LOGISTICS was born from a passion built over the years: an interest in logistics, international trade and the fascinating world that connects countries, companies and markets.",
     "What began as a path of learning and experience in the logistics, maritime, port and multimodal sectors became a vision backed by academic training, knowledge of trade processes and the conviction that it is always possible to go further.",
-    "After years of getting to know, learning and understanding the dynamics of this industry, the decision arose to transform that experience and knowledge into our own business project, with a global vision and the purpose of connecting productive capabilities with business opportunities around the world.",
+    "With that vision as a starting point, the decision arose to transform knowledge and experience into our own business project, supported by people who believed in this initiative and decided to contribute their capabilities, relationships, commercial opportunities and strategic vision. A union in which specialized knowledge is complemented with trust, mutual support and the joint construction of new opportunities.",
     "That is how Nexus was born: from passion turned into purpose, from knowledge transformed into initiative, and from the conviction that great projects begin when there is the determination to make them happen.",
   ],
 };

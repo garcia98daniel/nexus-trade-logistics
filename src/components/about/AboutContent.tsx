@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Compass, Target } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 import { history, mission, philosophy, valueProposition, values, vision, whoWeAre } from "@/data/company";
@@ -15,7 +16,14 @@ export default function AboutContent() {
       <PageHeader eyebrow={about.eyebrow} title={about.title} />
 
       <TextBlock id="quienes-somos" eyebrow={about.eyebrow} title={about.whoWeAre} paragraphs={whoWeAre[locale]} />
-      <TextBlock id="historia" eyebrow={about.eyebrow} title={about.history} paragraphs={history[locale]} muted />
+      <TextBlock
+        id="historia"
+        eyebrow={about.eyebrow}
+        title={about.history}
+        paragraphs={history[locale]}
+        muted
+        image={{ src: "/images/about-history.jpg", alt: t.images.history, aspect: "aspect-[3/4]" }}
+      />
 
       <section className="bg-white py-20">
         <div className="mx-auto grid max-w-7xl gap-6 px-5 md:grid-cols-2 lg:px-8">
@@ -53,7 +61,13 @@ export default function AboutContent() {
         </div>
       </section>
 
-      <TextBlock id="filosofia" eyebrow={about.eyebrow} title={about.philosophy} paragraphs={philosophy[locale]} />
+      <TextBlock
+        id="filosofia"
+        eyebrow={about.eyebrow}
+        title={about.philosophy}
+        paragraphs={philosophy[locale]}
+        image={{ src: "/images/about-philosophy.jpg", alt: t.images.philosophy, aspect: "aspect-[4/3]" }}
+      />
       <TextBlock
         id="propuesta-de-valor"
         eyebrow={about.eyebrow}
@@ -71,13 +85,29 @@ interface TextBlockProps {
   title: string;
   paragraphs: string[];
   muted?: boolean;
+  image?: { src: string; alt: string; aspect: string };
 }
 
-function TextBlock({ id, eyebrow, title, paragraphs, muted = false }: TextBlockProps) {
+function TextBlock({ id, eyebrow, title, paragraphs, muted = false, image }: TextBlockProps) {
   return (
     <section id={id} className={`py-20 ${muted ? "bg-cloud" : "bg-white"}`}>
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_1.5fr] lg:px-8">
-        <SectionHeading eyebrow={eyebrow} title={title} />
+        <div>
+          <SectionHeading eyebrow={eyebrow} title={title} />
+          {image && (
+            <div
+              className={`relative mt-8 ${image.aspect} max-w-md overflow-hidden rounded-[2rem] bg-navy shadow-xl shadow-navy/15`}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(min-width: 1024px) 400px, (min-width: 448px) 448px, 100vw"
+                className="object-cover"
+              />
+            </div>
+          )}
+        </div>
         <div className="space-y-5">
           {paragraphs.map((p) => (
             <p key={p} className="text-lg leading-relaxed text-steel">

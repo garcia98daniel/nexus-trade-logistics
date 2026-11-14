@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Boxes, Lightbulb, PackageOpen, Ship } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
@@ -105,12 +106,20 @@ export function CtaBand() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] bg-navy px-8 py-14 text-center sm:px-14">
-          <div aria-hidden className="absolute -right-16 -top-16 h-56 w-56 rounded-full border border-gold/30" />
+        <div className="relative overflow-hidden rounded-[2rem] bg-navy px-8 py-16 text-center sm:px-14 sm:py-20">
+          <Image
+            src="/images/cta-handshake.jpg"
+            alt={t.images.cta}
+            fill
+            sizes="(min-width: 1280px) 1216px, 100vw"
+            className="object-cover"
+          />
+          <div aria-hidden className="absolute inset-0 bg-navy/75" />
+          <div aria-hidden className="absolute -right-16 -top-16 h-56 w-56 rounded-full border border-gold/40" />
           <h2 className="relative mx-auto max-w-2xl font-serif text-3xl font-extrabold text-white sm:text-4xl">
             {t.ctaBand.title}
           </h2>
-          <p className="relative mx-auto mt-4 max-w-xl text-lg text-mist/80">{t.ctaBand.text}</p>
+          <p className="relative mx-auto mt-4 max-w-xl text-lg text-mist/90">{t.ctaBand.text}</p>
           <Link href="/contacto" className={`${buttonStyles.gold} relative mt-8`}>
             {t.ctaBand.button}
           </Link>

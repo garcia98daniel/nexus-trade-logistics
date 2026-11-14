@@ -20,7 +20,12 @@ export default function OperationsContent() {
 
   return (
     <>
-      <PageHeader eyebrow={page.eyebrow} title={page.title} text={page.intro}>
+      <PageHeader
+        eyebrow={page.eyebrow}
+        title={page.title}
+        text={page.intro}
+        image={{ src: "/images/operations.jpg", alt: t.images.operations }}
+      >
         <button type="button" onClick={() => requestQuote()} className={buttonStyles.primary}>
           {page.cta}
         </button>

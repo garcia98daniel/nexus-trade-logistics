@@ -15,7 +15,12 @@ export default function ImportsContent() {
 
   return (
     <>
-      <PageHeader eyebrow={page.eyebrow} title={page.title} text={page.intro}>
+      <PageHeader
+        eyebrow={page.eyebrow}
+        title={page.title}
+        text={page.intro}
+        image={{ src: "/images/imports.jpg", alt: t.images.imports }}
+      >
         <button type="button" onClick={() => requestQuote("import")} className={buttonStyles.primary}>
           {page.quoteCta}
         </button>

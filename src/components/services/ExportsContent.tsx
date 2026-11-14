@@ -23,7 +23,12 @@ export default function ExportsContent() {
 
   return (
     <>
-      <PageHeader eyebrow={page.eyebrow} title={page.title} text={page.intro}>
+      <PageHeader
+        eyebrow={page.eyebrow}
+        title={page.title}
+        text={page.intro}
+        image={{ src: "/images/exports.jpg", alt: t.images.exports }}
+      >
         <Link href="/catalogo" className={buttonStyles.primary}>
           {page.catalogCta}
           <ArrowRight className="h-4 w-4" />

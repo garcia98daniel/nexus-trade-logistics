@@ -241,6 +241,16 @@ const es = {
     label: "Escríbenos por WhatsApp",
     message: "Hola, quiero información sobre sus servicios.",
   },
+  images: {
+    heroPort: "Puerto de contenedores al atardecer con un buque de carga y grúas",
+    exports: "Operarias empacando frutas colombianas para exportación",
+    imports: "Coordinadora logística revisando mercancía importada en una bodega",
+    consulting: "Consultor en comercio internacional asesorando a clientes",
+    operations: "Transporte multimodal: camión, buque de carga y avión",
+    history: "Profesional de logística observando un puerto de contenedores al amanecer",
+    philosophy: "Familia campesina colombiana cosechando frutas",
+    cta: "Apretón de manos frente a un puerto de contenedores",
+  },
 };
 
 export type Dictionary = typeof es;
@@ -278,7 +288,7 @@ const en: Dictionary = {
       { title: "Advisory", text: "Strategic support" },
     ],
     modes: { sea: "Sea", air: "Air", land: "Land" },
-    visualCaption: "From our land to the world's markets",
+    visualCaption: "Beyond Logistics, Beyond Borders!",
   },
   homeServices: {
     eyebrow: "What we do",
@@ -485,6 +495,16 @@ const en: Dictionary = {
   whatsapp: {
     label: "Chat with us on WhatsApp",
     message: "Hello, I would like information about your services.",
+  },
+  images: {
+    heroPort: "Container port at sunset with a cargo ship and cranes",
+    exports: "Workers packing Colombian fruit for export",
+    imports: "Logistics coordinator checking imported goods in a warehouse",
+    consulting: "International trade consultant advising clients",
+    operations: "Multimodal transport: truck, cargo ship and airplane",
+    history: "Logistics professional looking over a container port at sunrise",
+    philosophy: "Colombian farming family harvesting fruit",
+    cta: "Handshake in front of a container port",
   },
 };
 
