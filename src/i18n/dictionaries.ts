@@ -33,7 +33,7 @@ const es = {
       { title: "Asesoría", text: "Acompañamiento estratégico" },
     ],
     modes: { sea: "Marítimo", air: "Aéreo", land: "Terrestre" },
-    visualCaption: "Del territorio a los mercados del mundo",
+    visualCaption: "¡Más allá de la logística, más allá de las fronteras!",
   },
   homeServices: {
     eyebrow: "Lo que hacemos",

@@ -7,7 +7,6 @@ import { useAppDispatch } from "@/redux/hooks";
 import { setActiveCategory } from "@/redux/catalog/slice";
 import { catalog } from "@/data/catalog";
 import PageHeader from "@/components/ui/PageHeader";
-import PendingNote from "@/components/ui/PendingNote";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { buttonStyles } from "@/components/ui/buttonStyles";
 import { categoryIcons } from "@/components/catalog/categoryIcons";
@@ -36,9 +35,7 @@ export default function ExportsContent() {
         <button type="button" onClick={() => requestQuote("export")} className={buttonStyles.secondary}>
           {page.quoteCta}
         </button>
-        <div className="w-full">
-          <PendingNote />
-        </div>
+        
       </PageHeader>
 
       <FeatureGrid eyebrow={page.eyebrow} title={page.howTitle} items={page.how} icons={[Search, Handshake, Truck]} />

@@ -3,7 +3,6 @@
 import { BarChart3, Handshake, Truck, Users } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 import PageHeader from "@/components/ui/PageHeader";
-import PendingNote from "@/components/ui/PendingNote";
 import { buttonStyles } from "@/components/ui/buttonStyles";
 import { CtaBand } from "@/components/home/HomeSections";
 import { FeatureGrid, useContactNavigation } from "./shared";
@@ -24,9 +23,6 @@ export default function ImportsContent() {
         <button type="button" onClick={() => requestQuote("import")} className={buttonStyles.primary}>
           {page.quoteCta}
         </button>
-        <div className="w-full">
-          <PendingNote />
-        </div>
       </PageHeader>
 
       <FeatureGrid

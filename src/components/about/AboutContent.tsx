@@ -22,7 +22,7 @@ export default function AboutContent() {
         title={about.history}
         paragraphs={history[locale]}
         muted
-        image={{ src: "/images/about-history.jpg", alt: t.images.history, aspect: "aspect-[3/4]" }}
+        image={{ src: "/images/about-history.jfif", alt: t.images.history, aspect: "aspect-[3/4]" }}
       />
 
       <section className="bg-white py-20">

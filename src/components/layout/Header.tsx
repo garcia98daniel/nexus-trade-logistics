@@ -26,8 +26,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-mist/60 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-5 lg:px-8">
-        <Link href="/" className="flex items-center gap-3" aria-label="NEXUS TRADE & LOGISTICS">
+      <div className="mx-auto flex h-26 max-w-7xl items-center justify-between gap-4 px-5 lg:px-8">
+        <Link href="/" className="flex shrink-0 flex-col items-center text-center" aria-label="NEXUS TRADE & LOGISTICS">
           <Image
             src="/images/logo-nexus.png"
             alt="NEXUS TRADE & LOGISTICS"
@@ -36,10 +36,9 @@ export default function Header() {
             priority
             className="h-14 w-14 object-contain"
           />
-          <span className="hidden flex-col leading-none sm:flex xl:hidden 2xl:flex">
-            <span className="text-lg font-bold tracking-[0.3em] text-navy">NEXUS</span>
-            <span className="mt-1 text-[10px] font-medium tracking-[0.25em] text-steel">
-              TRADE &amp; LOGISTICS
+          <span className="flex flex-col items-center leading-none">
+            <span className="max-w-[13rem] text-[9px] font-medium leading-tight tracking-[0.15em] text-steel sm:text-[10px]">
+              {t.hero.visualCaption}
             </span>
           </span>
         </Link>

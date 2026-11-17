@@ -4,7 +4,6 @@ import { Compass, Globe, GraduationCap, RefreshCw } from "lucide-react";
 import { useTranslation } from "@/i18n/useTranslation";
 import { vision } from "@/data/company";
 import PageHeader from "@/components/ui/PageHeader";
-import PendingNote from "@/components/ui/PendingNote";
 import { buttonStyles } from "@/components/ui/buttonStyles";
 import { CtaBand } from "@/components/home/HomeSections";
 import { FeatureGrid, useContactNavigation } from "./shared";
@@ -25,9 +24,6 @@ export default function ConsultingContent() {
         <button type="button" onClick={openContact} className={buttonStyles.primary}>
           {page.cta}
         </button>
-        <div className="w-full">
-          <PendingNote />
-        </div>
       </PageHeader>
 
       <FeatureGrid

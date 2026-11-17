@@ -42,7 +42,7 @@ export default function CatalogView() {
 
       <section className="min-h-[50vh] bg-navy pb-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="sticky top-20 z-30 -mx-5 border-y border-white/15 bg-navy/95 px-5 py-4 backdrop-blur lg:-mx-8 lg:px-8">
+          <div className="sticky top-26 z-30 -mx-5 border-y border-white/15 bg-navy/95 px-5 py-4 backdrop-blur lg:-mx-8 lg:px-8">
             <label className="relative block">
               <span className="sr-only">{t.catalog.search}</span>
               <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-mist/70" />
@@ -54,7 +54,7 @@ export default function CatalogView() {
                 className="w-full rounded-full border border-white/20 bg-white/10 py-3 pl-12 pr-4 text-white placeholder:text-mist/70 focus:border-gold focus:outline-none"
               />
             </label>
-            <div className="mt-4 flex gap-2 overflow-x-auto pb-1">
+            <div className="scrollbar-nexus mt-4 flex gap-2 overflow-x-auto pb-3">
               {[{ id: ALL_CATEGORIES, label: t.catalog.all }, ...categories.map((c) => ({ id: c.id, label: c.name[locale] }))].map(
                 ({ id, label }) => (
                   <button
