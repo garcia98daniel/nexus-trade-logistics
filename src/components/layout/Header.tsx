@@ -29,15 +29,15 @@ export default function Header() {
       <div className="mx-auto flex h-26 max-w-7xl items-center justify-between gap-4 px-5 lg:px-8">
         <Link href="/" className="flex shrink-0 flex-col items-center text-center" aria-label="NEXUS TRADE & LOGISTICS">
           <Image
-            src="/images/logo-nexus.png"
+            src="/images/isotipo.jpg"
             alt="NEXUS TRADE & LOGISTICS"
             width={64}
             height={64}
             priority
-            className="h-14 w-14 object-contain"
+            className="h-12 w-12 rounded-xl object-contain"
           />
           <span className="flex flex-col items-center leading-none">
-            <span className="max-w-[13rem] text-[9px] font-medium leading-tight tracking-[0.15em] text-steel sm:text-[10px]">
+            <span className="mt-1 max-w-[13rem] text-[9px] font-medium leading-tight tracking-[0.15em] text-steel sm:text-[10px]">
               {t.hero.visualCaption}
             </span>
           </span>

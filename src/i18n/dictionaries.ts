@@ -33,7 +33,7 @@ const es = {
       { title: "Asesoría", text: "Acompañamiento estratégico" },
     ],
     modes: { sea: "Marítimo", air: "Aéreo", land: "Terrestre" },
-    visualCaption: "¡Más allá de la logística, más allá de las fronteras!",
+    visualCaption: "Beyond Logistics, Beyond Borders!",
   },
   homeServices: {
     eyebrow: "Lo que hacemos",
@@ -197,9 +197,6 @@ const es = {
     title: "Hablemos de su próxima operación",
     text: "Complete el formulario y nuestro equipo le responderá a la brevedad.",
     tabs: { quote: "Solicitud de cotización", contact: "Contacto general" },
-    channels: "Canales de contacto",
-    email: "Correo electrónico",
-    whatsapp: "WhatsApp",
     fields: {
       fullName: "Nombre y apellido",
       name: "Nombre",
@@ -234,12 +231,7 @@ const es = {
   footer: {
     tagline: "Conectamos la riqueza productiva de nuestro territorio con los mercados del mundo.",
     navigation: "Navegación",
-    contact: "Contacto",
     rights: "Todos los derechos reservados.",
-  },
-  whatsapp: {
-    label: "Escríbenos por WhatsApp",
-    message: "Hola, quiero información sobre sus servicios.",
   },
   images: {
     heroPort: "Puerto de contenedores al atardecer con un buque de carga y grúas",
@@ -452,9 +444,6 @@ const en: Dictionary = {
     title: "Let's talk about your next operation",
     text: "Fill out the form and our team will get back to you shortly.",
     tabs: { quote: "Quote request", contact: "General contact" },
-    channels: "Contact channels",
-    email: "Email",
-    whatsapp: "WhatsApp",
     fields: {
       fullName: "Full name",
       name: "Name",
@@ -489,12 +478,7 @@ const en: Dictionary = {
   footer: {
     tagline: "We connect the productive wealth of our territory with the markets of the world.",
     navigation: "Navigation",
-    contact: "Contact",
     rights: "All rights reserved.",
-  },
-  whatsapp: {
-    label: "Chat with us on WhatsApp",
-    message: "Hello, I would like information about your services.",
   },
   images: {
     heroPort: "Container port at sunset with a cargo ship and cranes",

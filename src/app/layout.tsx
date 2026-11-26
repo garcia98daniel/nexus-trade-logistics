@@ -3,7 +3,6 @@ import { DM_Sans, Playfair_Display } from "next/font/google";
 import StoreProvider from "@/components/providers/StoreProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import "./globals.css";
 
 const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
@@ -31,7 +30,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Header />
           <main>{children}</main>
           <Footer />
-          <WhatsAppButton />
         </StoreProvider>
       </body>
     </html>

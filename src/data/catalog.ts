@@ -94,6 +94,7 @@ export const catalog: Category[] = [
       "Frozen fruits, vegetables, pulps, tubers and foods.",
     ),
     icon: "snowflake",
+    image: "/images/congelados.jpg",
     subcategories: [
       {
         id: "frutas-congeladas",
@@ -141,6 +142,7 @@ export const catalog: Category[] = [
       "Rice, corn, wheat, soybeans, lentils, beans and seeds.",
     ),
     icon: "wheat",
+    image: "/images/cereales.jpg",
     subcategories: [],
   },
   {
@@ -151,6 +153,7 @@ export const catalog: Category[] = [
       "Sugar, panela, molasses, vegetable oils and plant-based fats.",
     ),
     icon: "droplets",
+    image: "/images/azucares-aceites.jpg",
     subcategories: [],
   },
   {
@@ -161,6 +164,7 @@ export const catalog: Category[] = [
       "Pepper, cinnamon, turmeric, ginger, aromatic herbs and seasonings.",
     ),
     icon: "leaf",
+    image: "/images/especias.jpg",
     subcategories: [],
   },
   {
@@ -171,6 +175,7 @@ export const catalog: Category[] = [
       "Fish, shellfish, crustaceans and aquatic products.",
     ),
     icon: "fish",
+    image: "/images/mar.jpg",
     subcategories: [],
   },
   {
@@ -181,6 +186,7 @@ export const catalog: Category[] = [
       "Beef, pork and poultry; dairy and derivatives.",
     ),
     icon: "beef",
+    image: "/images/carnes.jpg",
     subcategories: [],
   },
   {
@@ -191,6 +197,7 @@ export const catalog: Category[] = [
       "Natural fibers, cotton, rubber, forest products and plant-based raw materials.",
     ),
     icon: "trees",
+    image: "/images/materias-primas.jpg",
     subcategories: [],
   },
   {
@@ -201,6 +208,7 @@ export const catalog: Category[] = [
       "Stucco, adhesives, cement, coatings and building materials.",
     ),
     icon: "brick",
+    image: "/images/construccion.jpg",
     subcategories: [],
   },
   {
@@ -211,6 +219,7 @@ export const catalog: Category[] = [
       "Industrial raw materials, supplies, manufactured and processed goods.",
     ),
     icon: "factory",
+    image: "/images/industriales.jpg",
     subcategories: [],
   },
 ];
